@@ -17,8 +17,8 @@ cd https://github.com/uchpython12/Flask-SQLAlchemy
 docker run過後可直接訪問 [localhost:5000](http://localhost:5000/).
 
 ```
-docker build -t Flask-SQLAlchemy .
-docker run -p 5000:5000 Flask-SQLAlchemy
+docker build -t flask-sqlalchemy .
+docker run -p 5000:5000 flask-sqlalchemy
 ```
 
 ### Installation
