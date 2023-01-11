@@ -9,7 +9,7 @@
 
 ```
 git clone https://github.com/uchpython12/Flask-SQLAlchemy
-cd https://github.com/uchpython12/Flask-SQLAlchemy//Flask_DbDao
+cd https://github.com/uchpython12/Flask-SQLAlchemy
 ```
 
 ### Docker Build Image
