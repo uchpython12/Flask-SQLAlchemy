@@ -6,5 +6,7 @@ WORKDIR /flask-sqlalchemy
 ADD . /flask-sqlalchemy
 # 運行pip3來安裝Flask應用程序的依賴套件
 RUN pip3 install -r requirements.txt
+# 定義當前的目錄位置
+WORKDIR /flask-sqlalchemy/Flask_DbDao
 # 執行python的指令語法
-CMD ["python3","/Flask_DbDao/DbDao.py"]
+CMD ["python3","DbDao.py"]
