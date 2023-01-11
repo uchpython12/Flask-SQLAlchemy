@@ -7,4 +7,4 @@ ADD . /flask-sqlalchemy
 # 運行pip3來安裝Flask應用程序的依賴套件
 RUN pip3 install -r requirements.txt
 # 執行python的指令語法
-CMD ["python3","Flask_DbDao/DbDao.py"]
+CMD ["python3","/Flask_DbDao/DbDao.py"]
