@@ -8,8 +8,8 @@
 你可以在本機直接使用 git 指令 clone 此專案並執行。
 
 ```
-git clone https://github.com/uchpython12/flask-sqlAlchemy
-cd https://github.com/uchpython12/flask-sqlAlchemy
+git clone https://github.com/uchpython12/flask-sqlalchemy
+cd https://github.com/uchpython12/flask-sqlalchemy
 ```
 
 ### Docker Build Image
