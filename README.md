@@ -9,7 +9,7 @@
 
 ```
 git clone https://github.com/uchpython12/flask-sqlalchemy
-cd https://github.com/uchpython12/flask-sqlalchemy/Flask_DbDao
+cd flask-sqlalchemy/Flask_DbDao
 ```
 
 ### Docker Build Image
@@ -17,8 +17,8 @@ cd https://github.com/uchpython12/flask-sqlalchemy/Flask_DbDao
 docker run過後可直接訪問 [localhost:5000](http://localhost:5000/).
 
 ```
-docker build -t flask-sqlalchemy .
-docker run -p 5000:5000 flask-sqlalchemy
+docker build -t flask_dbdao .
+docker run -p 5000:5000 flask_dbdao
 ```
 
 ### Installation
