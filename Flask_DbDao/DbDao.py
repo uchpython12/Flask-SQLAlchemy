@@ -1,15 +1,14 @@
 from flask import Flask, request, flash, url_for, redirect, render_template
 from flask_sqlalchemy import SQLAlchemy
-from datetime import datetime
+# from datetime import datetime
 app = Flask(__name__)
 
 # app.config['SQLALCHEMY_DATABASE_URI'] = [DB_TYPE]+[DB_CONNECTOR]://[USERNAME]:[PASSWORD]@[HOST]:[PORT]/[DB_NAME]
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///DevDb.db'
-
 # MySQL
 # app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://user_name:password@IP:3306/db_name"
 # app.config['SQLALCHEMY_DATABASE_URI'] = "mysql+pymysql://root:rootpwd@127.0.0.1:3306/DevDb"
-
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = "random string"
 
 db = SQLAlchemy(app)
@@ -34,6 +33,10 @@ class AppInfo(db.Model):
 @app.route('/')
 def show_all():
     return render_template('data/show_all.html', appInfo=AppInfo.query.all())
+
+@app.route('/test')
+def test():
+    return "<html><body><h1>Hello World</h1></body></html>"
 
 
 @app.route('/create', methods=['GET', 'POST'])
@@ -68,4 +71,4 @@ def modify(app_id):
 
 if __name__ == '__main__':
     db.create_all()
-    app.run(debug=False)
+    app.run(debug=False, host='0.0.0.0', port=5000)

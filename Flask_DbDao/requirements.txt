@@ -1,3 +1,4 @@
 Flask
 SQLAlchemy
-Flask-SQLAlchemy
+Flask-SQLAlchemy==2.5.1
+flask
